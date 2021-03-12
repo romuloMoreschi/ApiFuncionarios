@@ -3,7 +3,6 @@ using ApiAulaDev.Models;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ApiAulaDev.Repositorio.Interfaces;
-using System.Collections.Generic;
 
 namespace ApiAulaDev.Controllers
 {
@@ -22,7 +21,12 @@ namespace ApiAulaDev.Controllers
         {
             try
             {
-                return Ok(await _baseRepositorio.Create(funcionario));
+                return Ok(new 
+                { 
+                    Message = "Usuário cadastrado com sucesso !",
+                    Success = true,
+                    Data = await _baseRepositorio.Create(funcionario)
+                });
             }
             catch (Exception)
             {
@@ -40,7 +44,36 @@ namespace ApiAulaDev.Controllers
             }
             catch (Exception)
             {
-                return StatusCode(500, "Erro");
+                return StatusCode(500, "Erro !");
+            }
+        }
+
+        [HttpPut]
+        [Route("/api/v1/funcionarios/update")]
+        public async Task<IActionResult> Update([FromBody] Funcionario funcionario, int id)
+        {
+            try
+            {
+                if (id != funcionario.Id)
+                {
+                    return BadRequest();
+                }
+
+                return Ok(new
+                {
+                    Message = "Usuário atualizado com sucesso !",
+                    Success = true,
+                    data = await _baseRepositorio.Update(funcionario)
+                });
+            }
+            catch (Exception)
+            {
+                if (!(_baseRepositorio.Exists(id)))
+                {
+                    return NotFound("Funcionario não encontrado !");
+                }
+
+                return StatusCode(500, "Erro !");
             }
         }
     }

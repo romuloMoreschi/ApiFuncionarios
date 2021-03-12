@@ -11,5 +11,6 @@ namespace ApiAulaDev.Repositorio.Interfaces
         Task Remove(int id);
         Task<T> Get(int id);
         Task<List<T>> Get();
+        bool Exists(int id);
     }
 }

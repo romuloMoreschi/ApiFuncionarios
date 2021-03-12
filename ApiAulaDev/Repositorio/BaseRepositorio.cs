@@ -58,5 +58,9 @@ namespace ApiAulaDev.Repositorio
                 .AsNoTracking()
                 .ToListAsync();
         }
+        public virtual bool Exists(int id)
+        {
+            return _context.Set<T>().Any(e => e.Id == id);
+        }
     }
 }
