@@ -32,11 +32,11 @@ namespace ApiAulaDev.Controllers
 
         [HttpGet]
         [Route("/api/v1/funcionarios/get-funcionarios")]
-        public async Task<List<Funcionario>> GetFuncionarios()
+        public async Task<IActionResult> GetFuncionarios()
         {
             try
             {
-                return await _baseRepositorio.Get();
+                return Ok(await _baseRepositorio.Get());
             }
             catch (Exception)
             {
