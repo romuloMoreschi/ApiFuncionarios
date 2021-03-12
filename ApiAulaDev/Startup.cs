@@ -25,7 +25,7 @@ namespace ApiAulaDev
         {
             services.AddDbContext<Context>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IBaseRepositorio<Funcionario>, BaseRepositorio<Funcionario>>();
+            services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
 
             services.AddControllers();
 

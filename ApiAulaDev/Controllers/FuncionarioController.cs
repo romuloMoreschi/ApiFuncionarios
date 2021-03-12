@@ -1,9 +1,9 @@
 ﻿using System;
 using ApiAulaDev.Models;
-using ApiAulaDev.Repositorio;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ApiAulaDev.Repositorio.Interfaces;
+using System.Collections.Generic;
 
 namespace ApiAulaDev.Controllers
 {
@@ -11,7 +11,7 @@ namespace ApiAulaDev.Controllers
     public class FuncionarioController : ControllerBase
     {
         private readonly IBaseRepositorio<Funcionario> _baseRepositorio;
-        public FuncionarioController(BaseRepositorio<Funcionario> baseRepositorio)
+        public FuncionarioController(IBaseRepositorio<Funcionario> baseRepositorio)
         {
             _baseRepositorio = baseRepositorio;
         }
@@ -32,11 +32,11 @@ namespace ApiAulaDev.Controllers
 
         [HttpGet]
         [Route("/api/v1/funcionarios/get-funcionarios")]
-        public async Task<IActionResult> GetFuncionarios()
+        public async Task<List<Funcionario>> GetFuncionarios()
         {
             try
             {
-                return (IActionResult)await _baseRepositorio.Get();
+                return await _baseRepositorio.Get();
             }
             catch (Exception)
             {
