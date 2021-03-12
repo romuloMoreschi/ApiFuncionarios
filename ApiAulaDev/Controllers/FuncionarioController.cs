@@ -21,16 +21,16 @@ namespace ApiAulaDev.Controllers
         {
             try
             {
-                return Ok(new 
-                { 
-                    Message = "Usuário cadastrado com sucesso !",
+                return Ok(new
+                {
+                    Message = "Funcionario cadastrado com sucesso !",
                     Success = true,
                     Data = await _baseRepositorio.Create(funcionario)
                 });
             }
             catch (Exception)
             {
-                return StatusCode(500, "Erro");
+                return StatusCode(500, "Erro !");
             }
         }
 
@@ -61,9 +61,9 @@ namespace ApiAulaDev.Controllers
 
                 return Ok(new
                 {
-                    Message = "Usuário atualizado com sucesso !",
+                    Message = "Funcionario atualizado com sucesso !",
                     Success = true,
-                    data = await _baseRepositorio.Update(funcionario)
+                    Data = await _baseRepositorio.Update(funcionario)
                 });
             }
             catch (Exception)
@@ -73,6 +73,26 @@ namespace ApiAulaDev.Controllers
                     return NotFound("Funcionario não encontrado !");
                 }
 
+                return StatusCode(500, "Erro !");
+            }
+        }
+
+        [HttpDelete]
+        [Route("/api/v1/funcionarios/remove/{id}")]
+        public async Task<IActionResult> Remove(int id)
+        {
+            try
+            {
+                await _baseRepositorio.Remove(id);
+
+                return Ok(new
+                {
+                    Message = "Funcionario removido com sucesso !",
+                    Success = true
+                });
+            }
+            catch (Exception)
+            {
                 return StatusCode(500, "Erro !");
             }
         }
