@@ -22,7 +22,7 @@ namespace ApiAulaDev.Controllers
         {
             try
             {
-                return Ok();
+                return Ok(await _baseRepositorio.Create(funcionario));
             }
             catch (Exception)
             {
