@@ -34,20 +34,6 @@ namespace ApiAulaDev.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("/api/v1/funcionarios/get-funcionarios")]
-        public async Task<IActionResult> GetFuncionarios()
-        {
-            try
-            {
-                return Ok(await _baseRepositorio.Get());
-            }
-            catch (Exception)
-            {
-                return StatusCode(500, "Erro !");
-            }
-        }
-
         [HttpPut]
         [Route("/api/v1/funcionarios/update")]
         public async Task<IActionResult> Update([FromBody] Funcionario funcionario, int id)
@@ -90,6 +76,38 @@ namespace ApiAulaDev.Controllers
                     Message = "Funcionario removido com sucesso !",
                     Success = true
                 });
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Erro !");
+            }
+        }
+
+        [HttpGet]
+        [Route("/api/v1/funcionarios/get-funcionario/{id}")]
+        public async Task<IActionResult> GetFuncionario(int id)
+        {
+            try
+            {
+                return Ok(new
+                {
+                    Success = true,
+                    Data = await _baseRepositorio.Get(id)
+                });
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Erro !");
+            }
+        }
+
+        [HttpGet]
+        [Route("/api/v1/funcionarios/get-funcionarios")]
+        public async Task<IActionResult> GetFuncionarios()
+        {
+            try
+            {
+                return Ok(await _baseRepositorio.Get());
             }
             catch (Exception)
             {
