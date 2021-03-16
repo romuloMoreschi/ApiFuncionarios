@@ -1,5 +1,5 @@
 # NuGet restore
-FROM mcr.microsoft.com/dotnet/core/sdk:5.0-buster-slim AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:5.0 AS build
 WORKDIR /src
 COPY *.sln .
 COPY ApiAulaDev/*.csproj ApiAulaDev/
@@ -16,7 +16,7 @@ FROM build AS publish
 WORKDIR /src/ApiAulaDev
 RUN dotnet publish -c Release -o /src/publish
 
-FROM mcr.microsoft.com/dotnet/core/sdk:5.0-buster-slim AS runtime
+FROM mcr.microsoft.com/dotnet/core/sdk:5.0 AS runtime
 WORKDIR /app
 COPY --from=publish /src/publish .
 # ENTRYPOINT [ "dotnet" ,  "ApiAulaDev.dll" ]
