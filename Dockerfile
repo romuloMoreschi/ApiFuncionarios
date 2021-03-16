@@ -5,11 +5,6 @@ COPY ApiAulaDev/*.csproj ApiAulaDev/
 RUN dotnet restore
 COPY . .
 
-# testing
-FROM build AS testing
-WORKDIR /src/ApiAulaDev
-RUN dotnet build
-
 # publish
 FROM build AS publish
 WORKDIR /src/ApiAulaDev
