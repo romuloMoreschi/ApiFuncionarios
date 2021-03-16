@@ -1,18 +1,21 @@
-# https://hub.docker.com/_/microsoft-dotnet
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-WORKDIR /source
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
 
-# copy csproj and restore as distinct layers
-COPY *.sln .
-COPY ApiAulaDev/*.csproj ./ApiAulaDev/
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+COPY ApiAulaDev/*.csproj ApiAulaDev/
 RUN dotnet restore
+COPY . .
+
+WORKDIR "/src/ApiAulaDev"
+RUN dotnet build "ApiAulaDev.csproj" -c Release -o /app/build
 
 FROM build AS publish
-WORKDIR /source/ApiAulaDev
-RUN dotnet publish -c release -o /app --no-restore
+RUN dotnet publish "ApiAulaDev.csproj" -c Release -o /app/publish
 
-# final stage/image
-FROM mcr.microsoft.com/dotnet/aspnet:5.0
+FROM base AS final
 WORKDIR /app
-COPY --from=build /app ./
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ApiAulaDev.dll"]
