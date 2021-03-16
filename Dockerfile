@@ -3,15 +3,19 @@ WORKDIR /src
 COPY *.sln .
 COPY ApiAulaDev/*.csproj ApiAulaDev/
 RUN dotnet restore
-COPY . .
+
+# testing
+FROM build AS testing
+WORKDIR /src/ApiAulaDev
+RUN dotnet build
 
 # publish
 FROM build AS publish
 WORKDIR /src/ApiAulaDev
-RUN dotnet publish -c Release -o /src/publish
+RUN dotnet publish -c Release -o /app --no-restore
 
+# final stage/image
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS runtime
 WORKDIR /app
-COPY --from=publish /src/publish .
-# ENTRYPOINT [ "dotnet" ,  "ApiAulaDev.dll" ]
-CMD ASPNETCORE_URL=http://*:$PORT dotnet ApiAulaDev.dll
+COPY --from=build /app ./
+ENTRYPOINT [ "dotnet" ,  "ApiAulaDev.dll" ]
