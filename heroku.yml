@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: bundle exec ApiAulaDev -C config/ApiAulaDev.rb
