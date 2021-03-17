@@ -28,9 +28,9 @@ namespace ApiAulaDev.Controllers
                     Data = await _baseRepositorio.Create(funcionario)
                 });
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return StatusCode(500, "Erro !");
+                return StatusCode(500, e.Message);
             }
         }
 
@@ -52,14 +52,14 @@ namespace ApiAulaDev.Controllers
                     Data = await _baseRepositorio.Update(funcionario)
                 });
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 if (!(_baseRepositorio.Exists(id)))
                 {
                     return NotFound("Funcionario não encontrado !");
                 }
 
-                return StatusCode(500, "Erro !");
+                return StatusCode(500, e.Message);
             }
         }
 
@@ -77,9 +77,9 @@ namespace ApiAulaDev.Controllers
                     Success = true
                 });
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return StatusCode(500, "Erro !");
+                return StatusCode(500, e.Message);
             }
         }
 
@@ -95,9 +95,9 @@ namespace ApiAulaDev.Controllers
                     Data = await _baseRepositorio.Get(id)
                 });
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return StatusCode(500, "Erro !");
+                return StatusCode(500, e.Message);
             }
         }
 
@@ -109,9 +109,9 @@ namespace ApiAulaDev.Controllers
             {
                 return Ok(await _baseRepositorio.Get());
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return StatusCode(500, "Erro !");
+                return StatusCode(500, e.Message);
             }
         }
     }
