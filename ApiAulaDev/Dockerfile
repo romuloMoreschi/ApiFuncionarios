@@ -13,10 +13,10 @@ COPY . .
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish -c Release -o out
 
 FROM base AS final
 WORKDIR /app
-COPY --from=build-env /app/publish .
+COPY --from=build-env out .
 # ENTRYPOINT ["dotnet", "ApiAulaDev.dll"]
 CMD ASPNETCORE_URLS=http://*:$PORT dotnet ApiAulaDev.dll
