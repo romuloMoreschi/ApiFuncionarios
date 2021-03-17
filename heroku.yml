@@ -1,5 +1,0 @@
-build:
-  docker:
-    web: ApiAulaDev/Dockerfile
-run:
-  web: bundle exec ApiAulaDev -C config/ApiAulaDev.rb
