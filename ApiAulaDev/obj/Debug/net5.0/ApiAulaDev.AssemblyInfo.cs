@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("ca72c5ca-7fe8-4ecb-aaa1-2b588a6a6910")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiAulaDev")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

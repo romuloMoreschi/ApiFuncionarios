@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj": {}
+    "C:\\Users\\romul\\source\\repos\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj": {}
   },
   "projects": {
-    "G:\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj": {
+    "C:\\Users\\romul\\source\\repos\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj",
+        "projectUniqueName": "C:\\Users\\romul\\source\\repos\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj",
         "projectName": "ApiAulaDev",
-        "projectPath": "G:\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "G:\\ApiFuncionarios\\ApiAulaDev\\obj\\",
+        "projectPath": "C:\\Users\\romul\\source\\repos\\ApiFuncionarios\\ApiAulaDev\\ApiAulaDev.csproj",
+        "packagesPath": "C:\\Users\\romul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\romul\\source\\repos\\ApiFuncionarios\\ApiAulaDev\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\romul\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,6 +63,10 @@
               "target": "Package",
               "version": "[5.0.4, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.1.0, )"
@@ -87,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
