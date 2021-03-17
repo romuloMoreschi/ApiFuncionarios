@@ -15,4 +15,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 # ENTRYPOINT ["dotnet", "ApiAulaDev.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet /app/publish/ApiAulaDev.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet /publish/ApiAulaDev.dll
