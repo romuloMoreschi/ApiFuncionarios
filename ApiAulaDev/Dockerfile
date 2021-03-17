@@ -1,18 +1,24 @@
-FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
+# Dockerfile
+
+FROM mcr.microsoft.com/dotnet/core/sdk:5.0 AS build-env
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
-WORKDIR /src
-COPY ["/ApiAulaDev.csproj", "apiauladev/"]
-RUN dotnet restore "apiauladev/ApiAulaDev.csproj"
+# Copy csproj and restore as distinct layers
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy everything else and build
 COPY . .
-RUN dotnet build "ApiAulaDev.csproj" -c Release -o /app/build
+RUN dotnet publish -c Release -o out
 
-FROM build AS publish
-RUN dotnet publish "ApiAulaDev.csproj" -c Release -o /app/publish
-
-FROM base AS final
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/core/aspnet:5.0
 WORKDIR /app
-COPY --from=publish /app/publish .
-# ENTRYPOINT ["dotnet", "ApiAulaDev.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet /publish/ApiAulaDev.dll
+COPY --from=build-env /app/out .
+
+# Run the app on container startup
+# Use your project name for the second parameter
+# e.g. MyProject.dll
+# ENTRYPOINT [ "dotnet", "ApiAulaDev.dll" ]
+# Use the following instead for Heroku
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet ApiAulaDev.dll
