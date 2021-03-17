@@ -22,7 +22,7 @@ namespace ApiAulaDev
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Context>(options => options.UseSqlite($"Data Source={Environment.CurrentDirectory}/Data/ApiDev.db"));
+            services.AddDbContext<Context>(options => options.UseSqlite($"Data Source={Environment.CurrentDirectory}/ApiDev.db"));
 
             services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
 
