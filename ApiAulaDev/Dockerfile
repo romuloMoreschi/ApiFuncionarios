@@ -7,10 +7,10 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["ApiAulaDev/ApiAulaDev.csproj", "ApiAulaDev/"]
-RUN dotnet restore "ApiAulaDev/ApiAulaDev.csproj"
+COPY ["/ApiAulaDev.csproj", "apiauladev/"]
+RUN dotnet restore "apiauladev/ApiAulaDev.csproj"
 COPY . .
-WORKDIR "/src/ApiAulaDev"
+WORKDIR "/src/apiauladev"
 RUN dotnet build "ApiAulaDev.csproj" -c Release -o /app/build
 
 FROM build AS publish
