@@ -1,7 +1,7 @@
+using System;
 using ApiAulaDev.Data;
 using ApiAulaDev.Repositorio;
 using Microsoft.OpenApi.Models;
-using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +22,7 @@ namespace ApiAulaDev
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Context>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<Context>(options => options.UseSqlite($"Data Source={Environment.CurrentDirectory}/Data/ApiDev.db"));
 
             services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
 
