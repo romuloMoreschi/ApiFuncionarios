@@ -1,0 +1,115 @@
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\appsettings.Development.json
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\appsettings.json
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.exe
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.deps.json
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.runtimeconfig.json
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.runtimeconfig.dev.json
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ref\ApiAulaDev.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.pdb
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\FluentValidation.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Humanizer.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.OpenApi.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.GeneratedMSBuildEditorConfig.editorconfig
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.AssemblyInfoInputs.cache
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.AssemblyInfo.cs
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.csproj.CoreCompileInputs.cache
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.MvcApplicationPartsAssemblyInfo.cs
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.MvcApplicationPartsAssemblyInfo.cache
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\staticwebassets\ApiAulaDev.StaticWebAssets.Manifest.cache
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\staticwebassets\ApiAulaDev.StaticWebAssets.xml
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\scopedcss\bundle\ApiAulaDev.styles.css
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.RazorTargetAssemblyInfo.cache
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.csproj.CopyComplete
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ref\ApiAulaDev.dll
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.pdb
+G:\GoogleDrive2\TADS\5º Semestre\Devesenvolvimento Web\Aplicação ionic\API\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.genruntimeconfig.cache
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\appsettings.Development.json
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\appsettings.json
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.exe
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.deps.json
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.runtimeconfig.json
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.runtimeconfig.dev.json
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ref\ApiAulaDev.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\ApiAulaDev.pdb
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\FluentValidation.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Humanizer.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Microsoft.OpenApi.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+G:\ApiFuncionarios\ApiAulaDev\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.GeneratedMSBuildEditorConfig.editorconfig
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.AssemblyInfoInputs.cache
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.AssemblyInfo.cs
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.csproj.CoreCompileInputs.cache
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.MvcApplicationPartsAssemblyInfo.cs
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.MvcApplicationPartsAssemblyInfo.cache
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\staticwebassets\ApiAulaDev.StaticWebAssets.Manifest.cache
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\staticwebassets\ApiAulaDev.StaticWebAssets.xml
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\scopedcss\bundle\ApiAulaDev.styles.css
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.RazorTargetAssemblyInfo.cache
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.csproj.CopyComplete
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.dll
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ref\ApiAulaDev.dll
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.pdb
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.genruntimeconfig.cache
+G:\ApiFuncionarios\ApiAulaDev\obj\Debug\net5.0\ApiAulaDev.csprojAssemblyReference.cache
