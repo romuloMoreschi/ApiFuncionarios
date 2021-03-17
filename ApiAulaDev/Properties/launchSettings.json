@@ -11,6 +11,7 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
+      "workingDirectory": "C:\\Users\\romul\\source\\repos\\ApiFuncionarios\\ApiAulaDev",
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
