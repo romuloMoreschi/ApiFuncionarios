@@ -22,7 +22,7 @@ namespace ApiAulaDev
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Context>(options => options.UseSqlite($"Data Source={Environment.CurrentDirectory}/ApiDev.db"));
+            services.AddDbContext<Context>(options => options.UseSqlite($"Data Source=ApiDev.db"));
 
             services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
 
@@ -35,12 +35,13 @@ namespace ApiAulaDev
             });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Context dataContext)
         {
+            dataContext.Database.Migrate();
             //if (env.IsDevelopment())
             //{
-                //app.UseDeveloperExceptionPage();
-                app.UseSwagger();
+            //app.UseDeveloperExceptionPage();
+            app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiAulaDev v1"));
             //}
 
