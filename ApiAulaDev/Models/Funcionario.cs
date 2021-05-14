@@ -7,12 +7,12 @@ namespace ApiAulaDev.Models
 {
     public class Funcionario : Base
     {
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public string Credencial { get; set; }
+        public string Nome { get; private set; }
+        public string Sobrenome { get; private set; }
+        public string Credencial { get; private set; }
 
         [Display(Name = "Setor de atuação")]
-        public string SetorAtuacao { get; set; }
+        public string SetorAtuacao { get; private set; }
 
         public Funcionario()
         {

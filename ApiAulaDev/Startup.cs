@@ -1,9 +1,7 @@
-using System;
 using ApiAulaDev.Data;
 using ApiAulaDev.Repositorio;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using ApiAulaDev.Repositorio.Interfaces;
 using Microsoft.Extensions.Configuration;
@@ -31,19 +29,17 @@ namespace ApiAulaDev
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiAulaDev", Version = "v1" });
-                
+
             });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Context dataContext)
+        public void Configure(IApplicationBuilder app, Context dataContext)
         {
             dataContext.Database.Migrate();
-            //if (env.IsDevelopment())
-            //{
-            //app.UseDeveloperExceptionPage();
+
             app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiAulaDev v1"));
-            //}
+
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiAulaDev v1"));
 
             app.UseHttpsRedirection();
 

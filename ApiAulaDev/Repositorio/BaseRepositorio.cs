@@ -16,7 +16,6 @@ namespace ApiAulaDev.Repositorio
         {
             _context = context;
         }
-
         public virtual async Task<T> Create(T obj)
         {
             _context.Add(obj);
