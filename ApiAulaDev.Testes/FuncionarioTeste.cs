@@ -11,7 +11,7 @@ namespace ApiAulaDev.Testes
         public void TestCreate()
         {
             //Arrange
-            Funcionario funcionario = new("José", "Carlos", "A1567SSQNU", "Tecnologia");
+            Funcionario funcionario = new("José", "Carlos","945.427.800-23" ,"A1567SSQNU", "Tecnologia");
 
             Mock<IBaseRepositorio<Funcionario>> mock = new ();
             mock.Setup(m => m.Create(funcionario)).ReturnsAsync(funcionario);
