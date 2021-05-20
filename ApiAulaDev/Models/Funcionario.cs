@@ -9,22 +9,25 @@ namespace ApiAulaDev.Models
     {
         public string Nome { get; private set; }
         public string Sobrenome { get; private set; }
+        public string CPF { get; set; }
         public string Credencial { get; private set; }
 
         [Display(Name = "Setor de atuação")]
         public string SetorAtuacao { get; private set; }
 
-        public Funcionario()
+        protected Funcionario()
         {
         }
 
-        public Funcionario(string nome, string sobrenome, string credencial, string setorAtuacao)
+        public Funcionario(string nome, string sobrenome, string cpf, string credencial, string setorAtuacao)
         {
             Nome = nome;
             Sobrenome = sobrenome;
+            CPF = cpf;
             Credencial = credencial;
             SetorAtuacao = setorAtuacao;
             _errors = new List<string>();
+            Validar();
         }
 
         public void TrocarNome(string nome)
@@ -35,6 +38,12 @@ namespace ApiAulaDev.Models
         public void TrocarSobrenome(string sobrenome)
         {
             Sobrenome = sobrenome;
+            Validar();
+        }
+
+        public void TrocarCPF(string cpf)
+        {
+            CPF = cpf;
             Validar();
         }
         public void TrocarCredencial(string credencial)
@@ -60,7 +69,7 @@ namespace ApiAulaDev.Models
                     _errors.Add(error.ErrorMessage);
                 }
 
-                throw new Exception("Alguns campos estão inválidos, por favor corrija-os!" + _errors[0]);
+                throw new Exception("Alguns campos estão inválidos, por favor corrija-os!\n" + _errors[0]);
             }
 
             return true;
