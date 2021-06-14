@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using ApiAulaDev.Repositorio.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AutoMapper;
+using ApiAulaDev.Models;
+using ApiAulaDev.View;
 
 namespace ApiAulaDev
 {
@@ -23,6 +26,16 @@ namespace ApiAulaDev
             services.AddDbContext<Context>(options => options.UseSqlite($"Data Source=ApiDev.db"));
 
             services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
+
+            #region AutoMapper
+            var autoMapperConfig = new MapperConfiguration(cfg =>
+           {
+               cfg.CreateMap<Funcionario, FuncionarioView>().ReverseMap();
+           });
+            services.AddSingleton(autoMapperConfig.CreateMapper());
+            #endregion
+
+
 
             services.AddControllers();
 

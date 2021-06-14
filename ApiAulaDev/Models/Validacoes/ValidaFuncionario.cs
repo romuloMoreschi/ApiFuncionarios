@@ -27,6 +27,16 @@ namespace ApiAulaDev.Models.Validacoes
                 .NotNull()
                 .WithMessage("O sobrenome não pode ser nulo.");
 
+            RuleFor(x => x.CPF)
+                .NotEmpty()
+                .WithMessage("O sobrenome não pode ser vazio.")
+
+                .IsValidCPF()
+                .WithMessage("CPF Invalido")
+
+                .NotNull()
+                .WithMessage("O sobrenome não pode ser nulo.");
+
             RuleFor(x => x.Credencial)
               .NotEmpty()
               .WithMessage("A credencial não pode ser vazia.")

@@ -3,29 +3,35 @@ using ApiAulaDev.Models;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ApiAulaDev.Repositorio.Interfaces;
+using ApiAulaDev.View;
+using AutoMapper;
 
 namespace ApiAulaDev.Controllers
 {
     [ApiController]
     public class FuncionarioController : ControllerBase
     {
+        private readonly IMapper _mapper;
         private readonly IBaseRepositorio<Funcionario> _baseRepositorio;
-        public FuncionarioController(IBaseRepositorio<Funcionario> baseRepositorio)
+        public FuncionarioController(IBaseRepositorio<Funcionario> baseRepositorio, IMapper mapper)
         {
+            _mapper = mapper;
             _baseRepositorio = baseRepositorio;
         }
 
         [HttpPost]
         [Route("/api/v1/funcionarios/create")]
-        public async Task<IActionResult> Create([FromBody] Funcionario funcionario)
+        public async Task<IActionResult> Create([FromBody] FuncionarioView funcionarioView)
         {
             try
             {
+                var funcionario = _mapper.Map<Funcionario>(funcionarioView);
+                var data = await _baseRepositorio.Create(funcionario);
                 return Ok(new
                 {
                     Message = "Funcionario cadastrado com sucesso !",
                     Success = true,
-                    Data = await _baseRepositorio.Create(funcionario)
+                    Data = data
                 });
             }
             catch (Exception e)
@@ -93,6 +99,25 @@ namespace ApiAulaDev.Controllers
                 {
                     Success = true,
                     Data = await _baseRepositorio.Get(id)
+                });
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("/api/v1/funcionarios/get-cpffuncionario/{id}")]
+        public async Task<IActionResult> GetCpfFuncionario(int id)
+        {
+            try
+            {
+                var data = await _baseRepositorio.Get(id);
+                return Ok(new
+                {
+                    Success = true,
+                    Data = data.CPF.ToString()
                 });
             }
             catch (Exception e)
