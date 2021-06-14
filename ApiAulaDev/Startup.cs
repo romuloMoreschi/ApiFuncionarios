@@ -24,7 +24,8 @@ namespace ApiAulaDev
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Context>(options => options.UseSqlite($"Data Source=ApiDev.db"));
-
+            services.AddDbContext<Context>(options => options.UseSql)
+             
             services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
 
             #region AutoMapper

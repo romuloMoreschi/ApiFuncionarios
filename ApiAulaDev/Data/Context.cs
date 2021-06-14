@@ -8,6 +8,7 @@ namespace ApiAulaDev.Data
         public Context(DbContextOptions<Context> options) : base(options)
         {
 
+
         }
 
         public DbSet<Funcionario> Funcionario { get; set; }
