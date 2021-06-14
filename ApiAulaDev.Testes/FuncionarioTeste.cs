@@ -1,12 +1,23 @@
 using Moq;
 using Xunit;
+using System;
+using ApiAulaDev.Data;
 using ApiAulaDev.Models;
+using ApiAulaDev.Repositorio;
+using Microsoft.EntityFrameworkCore;
 using ApiAulaDev.Repositorio.Interfaces;
 
 namespace ApiAulaDev.Testes
 {
     public class FuncionarioTeste
     {
+        private readonly Context _context;
+        public FuncionarioTeste()
+        {
+            var _dbContextOptions = new DbContextOptionsBuilder<Context>()
+                .UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
+            _context = new Context(_dbContextOptions);
+        }
         [Fact]
         public void TestCreate()
         {
@@ -18,11 +29,10 @@ namespace ApiAulaDev.Testes
 
             //Act
             var resultadoEsperado = mock.Object.Create(funcionario).Result;
-
-            var Teste = resultadoEsperado != null;
+            var verifica = new BaseRepositorio<Funcionario>(_context).Create(funcionario).Result;
 
             //Assert
-            Assert.True(Teste);
+            Assert.Equal(verifica, resultadoEsperado);
         }
     }
 }
